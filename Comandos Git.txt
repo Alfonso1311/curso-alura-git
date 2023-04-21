@@ -1,2 +1,12 @@
-git init - Inicializa un repositorio en Git
+git init - inicializa un repositorio en Git
 git status - muestra el estado de los archivos dentro del repositorio
+git add . - agrega todos los archivos al repositorio
+git commit -m "mensaje" - crear commit
+
+git config --global user.email "email@gmail.com" - configurar email de github
+git config --global user.name "name" - configurar nombre de github
+
+git config --list - enumera la configuración que está siendo utilizada
+ingresar letra q - permite salir de la lista de configuraciones anterior
+git config user.name - muestra el nombre de usuario con el que está logueado
+git config user.email - muestra el email con el que está logueado
