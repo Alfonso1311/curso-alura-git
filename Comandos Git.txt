@@ -5,8 +5,19 @@ git commit -m "mensaje" - crear commit
 
 git config --global user.email "email@gmail.com" - configurar email de github
 git config --global user.name "name" - configurar nombre de github
+*****tambien puede utilizar los siguientes comandos para autenticarse
+git config --local user.name "Tu nombre aquí"
+git config --local user.email "Tu@email.aqui”
 
 git config --list - enumera la configuración que está siendo utilizada
-ingresar letra q - permite salir de la lista de configuraciones anterior
+***ingresar letra q - permite salir de la lista de configuraciones anterior
 git config user.name - muestra el nombre de usuario con el que está logueado
 git config user.email - muestra el email con el que está logueado
+
+git log - muestra el historial de commits
+git log --oneline - muestra el historial de commits con poca información
+git log -p - muestra el historial de commits con bastante información
+
+crear archivo llamado .gitignore - archivo que almacena lo que va a ignorar
+nombreCarpeta/ - para ignorar una carpeta
+nombreArchivo.extension - para ignorar un archivo
