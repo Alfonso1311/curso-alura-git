@@ -64,3 +64,8 @@ git stash list - lista de todos los stach pendientes
 git stash apply numeroStash - seguir trabajando en el stash deseado
 git stash pop - agarrar la ultima modificación agregada al stash y eliminarla de la lista
 
+    *** para navegar por los commits seguir los siguientes pasos:
+        git checkout idCommit(7 digitos) - para posicionarnos en la linea del tiempo donde esta ese commit
+        git checkout -b nombreRama - crear una nueva rama para poder regresar en cualquier momento y modificar ese commit
+        git commit "mensaje" - commitear los cambios realizados
+        git checkout nombreRama - volver a la rama principal donde ya estaran los cambios realizados del nuevo commit y los que teniamos
