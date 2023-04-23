@@ -53,3 +53,6 @@ git checkout -b nombreRama - crear una rama y trabajar en ella
 git merge nombreRama - en la rama que estamos trabajando incorporar los cambios realizados de la rama que le estamos indicando en le comando
     ***ingresar mensaje para el commit o ingresar :x para salir y guardar
 git rebase nombreRama - actualizar los commits de master con los de otra rama
+git stash list - lista de todos los stach pendientes
+git stash apply numeroStash - seguir trabajando en el stash deseado
+git stash pop - agarrar la ultima modificación agregada al stash y eliminarla de la lista
