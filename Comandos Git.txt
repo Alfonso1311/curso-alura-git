@@ -18,6 +18,7 @@ git config user.email - muestra el email con el que está logueado
 git log - muestra el historial de commits
 git log --oneline - muestra el historial de commits con poca información
 git log -p - muestra el historial de commits con bastante información
+git log --graph - muestra de forma gráfica los commits con las lineas de branch
 
 crear archivo llamado .gitignore - archivo que almacena lo que va a ignorar
 nombreCarpeta/ - para ignorar una carpeta
@@ -40,3 +41,15 @@ git remote rename rama nuevoNombre - renombrar una rama
     git remote rename origin servidorlocal
 git pull nombreServidor rama - obtener la información que está alojada en el servidor
     git pull servidorlocal master
+git remote add rama url - agregar un repositorio de github para almacenar la información
+    git remote add origin https://github.com/Alfonso1311/curso-alura-git.git
+    git push origin master
+
+git branch - muestra en que rama estamos trabajando
+git branch nombreRama - crea una rama nueva
+git checkout nombreRama - cambiar de rama para trabajar
+git checkout -b nombreRama - crear una rama y trabajar en ella
+
+git merge nombreRama - en la rama que estamos trabajando incorporar los cambios realizados de la rama que le estamos indicando en le comando
+    ***ingresar mensaje para el commit o ingresar :x para salir y guardar
+git rebase nombreRama - actualizar los commits de master con los de otra rama
