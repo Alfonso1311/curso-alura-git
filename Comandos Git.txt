@@ -69,3 +69,33 @@ git stash pop - agarrar la ultima modificación agregada al stash y eliminarla d
         git checkout -b nombreRama - crear una nueva rama para poder regresar en cualquier momento y modificar ese commit
         git commit "mensaje" - commitear los cambios realizados
         git checkout nombreRama - volver a la rama principal donde ya estaran los cambios realizados del nuevo commit y los que teniamos
+
+git diff commit1..commit2 - diferencia de códigos entre dos commits
+git diff - muestra la diferencia de código entre la última modificación sin ser commiteado y el último commit
+
+git tag -a numeroVersionTag -m "mensaje" - generar un tag o punto en nuestra aplicación
+    git tag -a v0.1.0 -m "Lanzando la primera versión (BETA) de la aplicación de cursos"
+git tag - lista de todas las tags o versiones
+
+    *** para mandar a un servidor origin o servidorlocal una tag
+        git push nombreServidor nombreRama
+        git push nombreServidor numeroVersionTag
+
+
+
+********************************************
+* Estándar de versionamiento de software   *
+* VERSIONES POR NÚMERO.                    *
+********************************************
+
+Algo común es realizar el manejo de versiones mediante 3 números: X.Y.Z y cada uno indica una cosa diferente:
+
+    El primero (X) se le conoce como versión mayor y nos indica la versión principal del software. Ejemplo: 1.0.0, 3.0.0
+    El segundo (Y) se le conoce como versión menor y nos indica nuevas funcionalidades. Ejemplo: 1.2.0, 3.3.0
+    El tercero (Z) se le conoce como revisión y nos indica que se hizo una revisión del código por algun fallo. Ejemplo: 1.2.2, 3.3.4
+
+Ahora que conocemos el significado de cada número, viene una pregunta importante: ¿cómo sabemos cuando cambiarlos y cuál cambiar?
+
+    Versión mayor o X, cuando agreguemos nuevas funcionalidades importantes, puede ser como un nuevo modulo o característica clave para la funcionalidad.
+    Versión menor o Y, cuando hacemos correcciones menores, cuando arreglamos un error y se agregan funcionalidades que no son cruciales para el proyecto.
+    Revisión o Z, cada vez que entregamos el proyecto.
