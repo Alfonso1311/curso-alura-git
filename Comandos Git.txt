@@ -3,6 +3,7 @@ git status - muestra el estado de los archivos dentro del repositorio
 git add . - agrega todos los archivos para commitear
 git add nombreArchivo - agregar solo archivo especifico apra commitear
 git commit -m "mensaje" - crear commit
+git commit - cuando aceptemos cambios cuando se produce un conflicto y se actualiza la branch master
 
 git config --global user.email "email@gmail.com" - configurar email de github
 git config --global user.name "name" - configurar nombre de github
@@ -53,6 +54,13 @@ git checkout -b nombreRama - crear una rama y trabajar en ella
 git merge nombreRama - en la rama que estamos trabajando incorporar los cambios realizados de la rama que le estamos indicando en le comando
     ***ingresar mensaje para el commit o ingresar :x para salir y guardar
 git rebase nombreRama - actualizar los commits de master con los de otra rama
+
+git restore nombreArchivo - deshace los cambios que no han sido agregados para commitear 
+git restore --staged - deshace los cambios que ya han sido agregados para commitear pero aún no se realiza el commit
+git revert idCommit - deshace los cambios cuando el commit ya fue realizado
+
+git stash nombreArchivo - guarda las modificaciones en un lugar temporal si todavía no esta listo para ser commiteado
 git stash list - lista de todos los stach pendientes
 git stash apply numeroStash - seguir trabajando en el stash deseado
 git stash pop - agarrar la ultima modificación agregada al stash y eliminarla de la lista
+
